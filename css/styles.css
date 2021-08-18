@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
-
-.containner {
-  max-width: 100%;
+body {
+    margin: 0;
 }
 
-.grid {
+.container {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+
+.images-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   max-width: 850px;
@@ -15,24 +20,11 @@
   margin: auto;
 }
 
-.item {
-  height: auto;
-  width: 100%;
-}
-
-
-
-
-
-
-.input-wrapper {
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
 
 .search-area {
-  margin-top: 1.2%;
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: 2.5em;
 }
 
 .search-area input{
@@ -40,5 +32,9 @@
   width: 35%;
   border: 2px solid lightgrey;
   padding-left: 1.25%;
+}
 
+.search-area input:hover {
+    transition: border-color 0.25s ease-in-out;
+    border: 2px solid grey;
 }
