@@ -12,7 +12,7 @@ body {
 }
 
 
-.images-container {
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   max-width: 850px;
@@ -29,12 +29,15 @@ body {
 
 .search-area input{
   height: 45px;
-  width: 35%;
+  width: 55%;
   border: 2px solid lightgrey;
-  padding-left: 1.25%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
-.search-area input:hover {
-    transition: border-color 0.25s ease-in-out;
+
+.search-area input:clicked {
+    transform: border-color 2.25s ease-in-out;
     border: 2px solid grey;
 }
