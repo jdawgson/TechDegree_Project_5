@@ -36,7 +36,7 @@ console.log("fdsghfgsdhdghdg");
     var options = {},
         defaults = {
             captions: true,
-            buttons: 'buttons',
+            buttons: 'Boolean',
             fullScreen: false,
             noScrollbars: false,
             bodyClass: 'baguetteBox-open',
